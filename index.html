@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+  </head>
+  <body>
+    <h1>Job Application Form</h1>
+
+    <form action="#" method="post">
+      <!-- Full name -->
+      <p>
+        <label for="fullname">Full Name:</label><br>
+        <input type="text" id="fullname" name="fullname" required>
+      </p>
+
+      <!-- Email -->
+      <p>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required>
+      </p>
+
+      <!-- Phone -->
+      <p>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required>
+      </p>
+
+      <!-- Date of birth -->
+      <p>
+        <label for="dob">Date of Birth:</label><br>
+        <input type="date" id="dob" name="dob" required>
+      </p>
+
+      <!-- Portfolio URL -->
+      <p>
+        <label for="portfolio">Portfolio URL:</label><br>
+        <input type="url" id="portfolio" name="portfolio">
+      </p>
+
+      <!-- Preferred shift (radio buttons) -->
+      <p>
+        Preferred Shift:<br>
+        <input type="radio" id="morning" name="shift" value="morning" required>
+        <label for="morning">Morning</label>
+        <input type="radio" id="evening" name="shift" value="evening">
+        <label for="evening">Evening</label>
+        <input type="radio" id="night" name="shift" value="night">
+        <label for="night">Night</label>
+      </p>
+
+      <!-- Skills (checkboxes) -->
+      <p>
+        Skills:<br>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">CSS</label>
+        <input type="checkbox" id="javascript" name="skills" value="javascript">
+        <label for="javascript">JavaScript</label>
+      </p>
+
+      <!-- Job role (dropdown) -->
+      <p>
+        <label for="role">Job Role:</label><br>
+        <select id="role" name="role" required>
+          <option value="">Select a role</option>
+          <option value="frontend">Frontend Developer</option>
+          <option value="backend">Backend Developer</option>
+          <option value="fullstack">Full Stack Developer</option>
+        </select>
+      </p>
+
+      <!-- Cover letter -->
+      <p>
+        <label for="coverletter">Cover Letter:</label><br>
+        <textarea id="coverletter" name="coverletter" rows="5" cols="40"></textarea>
+      </p>
+
+      <!-- Disabled field example -->
+      <p>
+        <label for="applicationid">Application ID:</label><br>
+        <input type="text" id="applicationid" name="applicationid" value="Generated after submission" disabled>
+      </p>
+
+      <!-- Submit button -->
+      <p>
+        <button type="submit">Submit Application</button>
+      </p>
+    </form>
+  </body>
+</html>
